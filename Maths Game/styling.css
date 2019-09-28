@@ -1,0 +1,156 @@
+html 
+{
+    height: 100%;
+    background: radial-gradient(circle, #fff, #ccc);
+}
+
+#container
+{
+    height: 400px;
+    width: 500px;
+    background-color: #9DD2EA;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4; 
+    position: relative;
+}
+
+#score
+{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    left: 350px;
+    box-shadow: 0px 4px #888de4;
+}
+
+#correct
+{
+    position: absolute;
+    left: 200px;
+    background-color: chartreuse;
+    color: aliceblue;
+    padding: 11px;
+    display: none;
+
+}
+
+#wrong
+{
+    position: absolute;
+    left: 200px;
+    background-color: crimson;
+    color: aliceblue;
+    padding: 11px;
+    display: none;
+}
+
+#question
+{
+    width: 300px;
+    height: 120px;
+    margin: 50px auto 10px auto;
+    background-color: blueviolet;
+    box-shadow: 0px 4px #535aa8;
+    font-size:  100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+
+#instruction
+{
+    width: 300px;
+    height: 50px;
+    background-color: coral;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0px 4px #8153a8;
+}
+
+#choices
+{
+    width: 300px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.choice
+{
+    width: 60px;
+    height: 60px;
+    background-color: floralwhite;
+    float: left;
+    margin-right: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    transition: all 0.1s;
+    
+}
+
+#box4
+{
+    margin-right: 0;
+}
+.choice:hover, #startreset:hover
+{
+    background-color: blueviolet;
+    color: whitesmoke;
+    box-shadow: 0px 4px #6b5d43;
+}
+
+.choice:active, #startreset:active
+{
+    box-shadow: 0px 0px #6b54d3;
+    top:4px;
+    
+}
+
+#startreset
+{
+    width: 80px;
+    padding: 10px;
+    background-color: floralwhite;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.1s;
+}
+
+#timeRem
+{
+    width: 180px;
+    border-radius: 2px;
+    padding: 10px;
+    position: absolute;
+    top: 370px;
+    left: 340px;
+    background-color:chartreuse;
+    display: none;
+    
+}
+#gameOver
+{
+    height: 200px;
+    width: 400px;
+    background: linear-gradient(#F3CA6B, #9DD2EA);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    display: none;
+    z-index: 2;
+}
